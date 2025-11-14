@@ -1,3 +1,5 @@
+# Security Group
+resource "aws_security_group" "webserver" {
   name        = "${var.project_name}-${var.project_environment}-webserver"
   description = "${var.project_name}-${var.project_environment}-webserver"
   tags = {
